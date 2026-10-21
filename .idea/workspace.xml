@@ -4,26 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0069de7-3b35-4c98-bc71-a4b70c87b278" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.ai/mcp/mcp.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/parking/parkinglot/HelloServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/beans.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/pageTemplate.tag" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/about.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+    <list default="true" id="c0069de7-3b35-4c98-bc71-a4b70c87b278" name="Changes" comment="added a page template tag and created an about">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/footer.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/menu.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/pageTemplate.tag" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/pageTemplate.tag" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,9 +40,28 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jsp File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "RazvanPorumbescu"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/RazvanPorumbescu/ParkingLot.git",
+    "accountId": "81eb4164-b2af-4a14-a4a4-b2f982d30276"
+  }
+}]]></component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -71,23 +75,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.000000000007907" />
-      <entry key="MS500" value="1.0060203129680165" />
-      <entry key="S2" value="1.300356538027136" />
-      <entry key="S5" value="1.8196816446979813" />
-      <entry key="S10" value="2.3891615340916283" />
-      <entry key="S30" value="5.857196848969327" />
-      <entry key="S60" value="11.13956444829371" />
-      <entry key="M2" value="17.060287802106465" />
-      <entry key="M5" value="22.783601593936538" />
-      <entry key="M10" value="25.22483771927471" />
-      <entry key="M15" value="26.110472483712822" />
-      <entry key="M30" value="27.034911626751164" />
-      <entry key="H1" value="27.512255807114173" />
-      <entry key="H2" value="27.754812726198566" />
-      <entry key="H4" value="27.87707565145475" />
-      <entry key="D1" value="27.979466512714406" />
-      <entry key="W1" value="27.997065513654288" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0" />
+      <entry key="S30" value="1.0000002526386969" />
+      <entry key="S60" value="1.0018640730201425" />
+      <entry key="M2" value="1.1659166838003676" />
+      <entry key="M5" value="3.6736176175711206" />
+      <entry key="M10" value="9.080051384664976" />
+      <entry key="M15" value="13.5994394099783" />
+      <entry key="M30" value="22.893312364814143" />
+      <entry key="H1" value="35.249745777623104" />
+      <entry key="H2" value="49.332546307861584" />
+      <entry key="H4" value="61.015219890925856" />
+      <entry key="D1" value="74.69764539055234" />
+      <entry key="W1" value="77.51503190763701" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -109,23 +113,23 @@
       <entry key="W1" value="0.0" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="2.2027121497537423E-10" />
-      <entry key="MS500" value="0.012044907380525082" />
-      <entry key="S2" value="0.47229801599937593" />
-      <entry key="S5" value="1.2392236080707542" />
-      <entry key="S10" value="1.9921213907626054" />
-      <entry key="S30" value="5.619801455163728" />
-      <entry key="S60" value="10.956933676871168" />
-      <entry key="M2" value="16.93491049723659" />
-      <entry key="M5" value="22.720581390659458" />
-      <entry key="M10" value="25.19061177782407" />
-      <entry key="M15" value="26.087000630094337" />
-      <entry key="M30" value="27.02283467275951" />
-      <entry key="H1" value="27.506129396861912" />
-      <entry key="H2" value="27.751727194268554" />
-      <entry key="H4" value="27.87552726028171" />
-      <entry key="D1" value="27.979207662520427" />
-      <entry key="W1" value="27.997028515782027" />
+      <entry key="MS100" value="0.014578640492762609" />
+      <entry key="MS500" value="0.42928271821887687" />
+      <entry key="S2" value="0.8094422165474084" />
+      <entry key="S5" value="0.9189128834790499" />
+      <entry key="S10" value="0.9585994384929766" />
+      <entry key="S30" value="0.9860051070487978" />
+      <entry key="S60" value="0.9948113750665657" />
+      <entry key="M2" value="1.1610563056529786" />
+      <entry key="M5" value="3.6641181770995432" />
+      <entry key="M10" value="9.06890823489345" />
+      <entry key="M15" value="13.589181684834015" />
+      <entry key="M30" value="22.885565102447995" />
+      <entry key="H1" value="35.243911393998644" />
+      <entry key="H2" value="49.32837948670038" />
+      <entry key="H4" value="61.01259330512205" />
+      <entry key="D1" value="74.69709906007864" />
+      <entry key="W1" value="77.5149506331051" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -316,6 +320,21 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added a page template tag and created an about" />
+    <option name="LAST_COMMIT_MESSAGE" value="added a page template tag and created an about" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
