@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c0069de7-3b35-4c98-bc71-a4b70c87b278" name="Changes" comment="added a page template tag and created an about">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/footer.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/menu.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/servlets/Cars.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/cars.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/pageTemplate.tag" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/pageTemplate.tag" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +42,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Servlet" />
         <option value="Jsp File" />
       </list>
     </option>
@@ -50,18 +50,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "RazvanPorumbescu"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;RazvanPorumbescu&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/RazvanPorumbescu/ParkingLot.git",
-    "accountId": "81eb4164-b2af-4a14-a4a4-b2f982d30276"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/RazvanPorumbescu/ParkingLot.git&quot;,
+    &quot;accountId&quot;: &quot;81eb4164-b2af-4a14-a4a4-b2f982d30276&quot;
   }
-}]]></component>
+}</component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -77,21 +77,21 @@
     <decayedCancelled>
       <entry key="MS100" value="1.0" />
       <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.0" />
-      <entry key="S30" value="1.0000002526386969" />
-      <entry key="S60" value="1.0018640730201425" />
-      <entry key="M2" value="1.1659166838003676" />
-      <entry key="M5" value="3.6736176175711206" />
-      <entry key="M10" value="9.080051384664976" />
-      <entry key="M15" value="13.5994394099783" />
-      <entry key="M30" value="22.893312364814143" />
-      <entry key="H1" value="35.249745777623104" />
-      <entry key="H2" value="49.332546307861584" />
-      <entry key="H4" value="61.015219890925856" />
-      <entry key="D1" value="74.69764539055234" />
-      <entry key="W1" value="77.51503190763701" />
+      <entry key="S2" value="1.0000114642380695" />
+      <entry key="S5" value="1.0105618033830321" />
+      <entry key="S10" value="1.1027706348283994" />
+      <entry key="S30" value="1.468410058030719" />
+      <entry key="S60" value="1.686263299266416" />
+      <entry key="M2" value="1.8775351841553034" />
+      <entry key="M5" value="2.971389650559213" />
+      <entry key="M10" value="6.804293657296991" />
+      <entry key="M15" value="10.917332111942963" />
+      <entry key="M30" value="20.551485755397017" />
+      <entry key="H1" value="33.73597084906218" />
+      <entry key="H2" value="48.810713930287974" />
+      <entry key="H4" value="61.435667772693556" />
+      <entry key="D1" value="76.37188543919754" />
+      <entry key="W1" value="79.46665057801462" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -113,23 +113,23 @@
       <entry key="W1" value="0.0" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.014578640492762609" />
-      <entry key="MS500" value="0.42928271821887687" />
-      <entry key="S2" value="0.8094422165474084" />
-      <entry key="S5" value="0.9189128834790499" />
-      <entry key="S10" value="0.9585994384929766" />
-      <entry key="S30" value="0.9860051070487978" />
-      <entry key="S60" value="0.9948113750665657" />
-      <entry key="M2" value="1.1610563056529786" />
-      <entry key="M5" value="3.6641181770995432" />
-      <entry key="M10" value="9.06890823489345" />
-      <entry key="M15" value="13.589181684834015" />
-      <entry key="M30" value="22.885565102447995" />
-      <entry key="H1" value="35.243911393998644" />
-      <entry key="H2" value="49.32837948670038" />
-      <entry key="H4" value="61.01259330512205" />
-      <entry key="D1" value="74.69709906007864" />
-      <entry key="W1" value="77.5149506331051" />
+      <entry key="MS100" value="0.9526379980439373" />
+      <entry key="MS500" value="0.9903428719330246" />
+      <entry key="S2" value="0.9975883419231055" />
+      <entry key="S5" value="1.009574312506084" />
+      <entry key="S10" value="1.102200102824227" />
+      <entry key="S30" value="1.4681184365955018" />
+      <entry key="S60" value="1.6860744634932923" />
+      <entry key="M2" value="1.8772279361999953" />
+      <entry key="M5" value="2.968647040900142" />
+      <entry key="M10" value="6.7983306701511195" />
+      <entry key="M15" value="10.910572754153465" />
+      <entry key="M30" value="20.545196289389196" />
+      <entry key="H1" value="33.730713363581074" />
+      <entry key="H2" value="48.80675802103793" />
+      <entry key="H4" value="61.433108201896225" />
+      <entry key="D1" value="76.37134133696814" />
+      <entry key="W1" value="79.46656933239616" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -150,6 +150,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
@@ -159,7 +160,8 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;fileTemplates&quot;
   }
 }</component>
   <component name="RunDashboard">
