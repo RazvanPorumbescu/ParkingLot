@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0069de7-3b35-4c98-bc71-a4b70c87b278" name="Changes" comment="Created the entities">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistences.xml" beforeDir="false" />
+    <list default="true" id="c0069de7-3b35-4c98-bc71-a4b70c87b278" name="Changes" comment="Connected to the database">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/parkinglot/common/CarDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/parkinglot/ejb/CarsBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,61 +76,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.0000000000000004" />
-      <entry key="S30" value="1.0000205142777217" />
-      <entry key="S60" value="1.0109429508155647" />
-      <entry key="M2" value="1.2554464531194962" />
-      <entry key="M5" value="2.6974967219638453" />
-      <entry key="M10" value="4.287300363773828" />
-      <entry key="M15" value="5.377342739488059" />
-      <entry key="M30" value="7.912060331520174" />
-      <entry key="H1" value="10.901485762974003" />
-      <entry key="H2" value="13.403991918715464" />
-      <entry key="H4" value="16.41488550960726" />
-      <entry key="D1" value="83.67620913547191" />
-      <entry key="W1" value="147.57353097302482" />
+      <entry key="MS100" value="1.0000042917575254" />
+      <entry key="MS500" value="1.0852045704437319" />
+      <entry key="S2" value="1.85464403556468" />
+      <entry key="S5" value="3.280517577405507" />
+      <entry key="S10" value="4.733725276986649" />
+      <entry key="S30" value="6.664366682754049" />
+      <entry key="S60" value="8.217979948313314" />
+      <entry key="M2" value="11.49633514049027" />
+      <entry key="M5" value="17.706387483157805" />
+      <entry key="M10" value="22.3846134004203" />
+      <entry key="M15" value="24.885488722053672" />
+      <entry key="M30" value="29.115707908500198" />
+      <entry key="H1" value="33.20472977050922" />
+      <entry key="H2" value="36.433025963085136" />
+      <entry key="H4" value="39.85952715290445" />
+      <entry key="D1" value="107.33688895817161" />
+      <entry key="W1" value="171.49154025184157" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="0.0" />
-      <entry key="S5" value="4.848055E-317" />
-      <entry key="S10" value="6.962797602199698E-159" />
-      <entry key="S30" value="1.9095363221371716E-53" />
-      <entry key="S60" value="4.3698241636674264E-27" />
-      <entry key="M2" value="6.610464555284615E-14" />
-      <entry key="M5" value="5.346785878646274E-6" />
-      <entry key="M10" value="0.002312311803941301" />
-      <entry key="M15" value="0.01748628681199454" />
-      <entry key="M30" value="0.1322357244166442" />
-      <entry key="H1" value="0.36364232424213766" />
-      <entry key="H2" value="0.6031738995925233" />
-      <entry key="H4" value="0.7886433982277772" />
-      <entry key="D1" value="1.4378347127810727" />
-      <entry key="W1" value="1.8942146658482055" />
+      <entry key="MS500" value="2.0656470641307738E-103" />
+      <entry key="S2" value="2.146736500255967E-26" />
+      <entry key="S5" value="6.128055705160245E-11" />
+      <entry key="S10" value="1.0066073850052411E-5" />
+      <entry key="S30" value="0.03525849333176079" />
+      <entry key="S60" value="0.3007545682855931" />
+      <entry key="M2" value="0.9249506958633857" />
+      <entry key="M5" value="1.860126721890896" />
+      <entry key="M10" value="2.3605969887815945" />
+      <entry key="M15" value="2.567515448916091" />
+      <entry key="M30" value="2.879188617832298" />
+      <entry key="H1" value="3.2147318419424136" />
+      <entry key="H2" value="3.517454456704" />
+      <entry key="H4" value="3.7414501319942692" />
+      <entry key="D1" value="4.427546178099755" />
+      <entry key="W1" value="4.892504287534411" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9201876506248751" />
-      <entry key="MS500" value="0.9835020740262483" />
-      <entry key="S2" value="0.9958497530944581" />
-      <entry key="S5" value="0.9983378297043665" />
-      <entry key="S10" value="0.9991685692136074" />
-      <entry key="S30" value="0.9997427559963593" />
-      <entry key="S60" value="1.010658347174323" />
-      <entry key="M2" value="1.2536615283591257" />
-      <entry key="M5" value="2.692901050576608" />
-      <entry key="M10" value="4.285289704981883" />
-      <entry key="M15" value="5.391256743924826" />
-      <entry key="M30" value="8.042036683395919" />
-      <entry key="H1" value="11.263821215703903" />
-      <entry key="H2" value="14.006450603457544" />
-      <entry key="H4" value="17.20311883451194" />
-      <entry key="D1" value="85.11367977305773" />
-      <entry key="W1" value="149.46765178736769" />
+      <entry key="MS100" value="0.21315872300793182" />
+      <entry key="MS500" value="0.7439624906459263" />
+      <entry key="S2" value="1.5102897801067363" />
+      <entry key="S5" value="2.973911182075856" />
+      <entry key="S10" value="4.492072662549189" />
+      <entry key="S30" value="6.569075398699961" />
+      <entry key="S60" value="8.399557832003527" />
+      <entry key="M2" value="12.30192211106452" />
+      <entry key="M5" value="19.481752934923588" />
+      <entry key="M10" value="24.6916641029936" />
+      <entry key="M15" value="27.414035129309045" />
+      <entry key="M30" value="31.97343867790359" />
+      <entry key="H1" value="36.408128425871" />
+      <entry key="H2" value="39.94463629673086" />
+      <entry key="H4" value="43.59797305747138" />
+      <entry key="D1" value="111.76363528998691" />
+      <entry key="W1" value="176.3838882135458" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -167,34 +168,8 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunDashboard">
-    <option name="hiddenConfigurations">
-      <map>
-        <entry key="GlassfishConfiguration">
-          <value>
-            <set>
-              <option value="GlassFish 8.0.51" />
-            </set>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="configurationStatuses">
-      <map>
-        <entry key="GlassfishConfiguration">
-          <value>
-            <map>
-              <entry key="GlassFish 8.0.5" value="STOPPED" />
-              <entry key="GlassFish 8.0.51" value="STOPPED" />
-            </map>
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="RunManager" selected="GlassFish Server.GlassFish 8.0.51">
-    <configuration name="GlassFish 8.0.5" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 8.0.5" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="openjdk-25">
-      <option name="UPDATING_POLICY" value="hot-swap-classes" />
+  <component name="RunManager" selected="Unknown.GlassFish 8.0.5931337852">
+    <configuration name="GlassFish 8.0.51" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 8.0.51" ALTERNATIVE_JRE_ENABLED="false">
       <deployment>
         <artifact name="Gradle : com.parking : ParkingLot-1.0-SNAPSHOT.war">
           <settings />
@@ -264,7 +239,8 @@
         </option>
       </method>
     </configuration>
-    <configuration name="GlassFish 8.0.51" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 8.0.51" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration name="GlassFish 8.0.5" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 8.0.5" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="openjdk-25">
+      <option name="UPDATING_POLICY" value="hot-swap-classes" />
       <deployment>
         <artifact name="Gradle : com.parking : ParkingLot-1.0-SNAPSHOT.war">
           <settings />
@@ -370,7 +346,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added a page template tag and created an about" />
     <MESSAGE value="Created the entities" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created the entities" />
+    <MESSAGE value="Connected to the database" />
+    <option name="LAST_COMMIT_MESSAGE" value="Connected to the database" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
