@@ -4,22 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0069de7-3b35-4c98-bc71-a4b70c87b278" name="Changes" comment="add car and run">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/parkinglot/common/UserDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/parkinglot/ejb/UserBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/parkinglot/ejb/UsersBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/parkinglot/servlets/Users.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/users.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+    <list default="true" id="c0069de7-3b35-4c98-bc71-a4b70c87b278" name="Changes" comment="created the EJB">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/parkinglot/servlets/AddCar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addCar.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/editCar.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/scripts/form-validation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/parkinglot/common/CarDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/parkinglot/common/CarDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/parkinglot/ejb/CarsBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/parkinglot/ejb/CarsBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/parkinglot/entities/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/parkinglot/entities/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/Cars.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/parkinglot/servlets/Cars.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/cars.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/cars.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/menu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/menu.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/pageTemplate.tag" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/pageTemplate.tag" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,23 +94,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000000000000184" />
-      <entry key="MS500" value="1.0017922653951394" />
-      <entry key="S2" value="1.205755086319677" />
-      <entry key="S5" value="1.531300508976264" />
-      <entry key="S10" value="1.7289036349040001" />
-      <entry key="S30" value="1.8999603418343964" />
-      <entry key="S60" value="1.9486623961317306" />
-      <entry key="M2" value="1.9739930164696924" />
-      <entry key="M5" value="1.9895148978399062" />
-      <entry key="M10" value="1.9947436342293958" />
-      <entry key="M15" value="1.9964926790277695" />
-      <entry key="M30" value="1.9982447991488708" />
-      <entry key="H1" value="1.9991220141450006" />
-      <entry key="H2" value="1.9995634747024433" />
-      <entry key="H4" value="2.010939878307091" />
-      <entry key="D1" value="30.172122157973135" />
-      <entry key="W1" value="146.8469180903922" />
+      <entry key="MS100" value="1.0016768856180425" />
+      <entry key="MS500" value="1.2785484538798997" />
+      <entry key="S2" value="1.750037812749933" />
+      <entry key="S5" value="2.217958349318991" />
+      <entry key="S10" value="2.76002170318694" />
+      <entry key="S30" value="3.4658101428883064" />
+      <entry key="S60" value="3.7179005468243362" />
+      <entry key="M2" value="3.941771752496324" />
+      <entry key="M5" value="4.51786048965005" />
+      <entry key="M10" value="5.04506264236506" />
+      <entry key="M15" value="5.302232406789395" />
+      <entry key="M30" value="5.616199555665087" />
+      <entry key="H1" value="5.798446268260643" />
+      <entry key="H2" value="5.8966859282980275" />
+      <entry key="H4" value="5.958566236294137" />
+      <entry key="D1" value="34.04276520975329" />
+      <entry key="W1" value="150.75693121538743" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -128,34 +121,34 @@
       <entry key="S30" value="0.0" />
       <entry key="S60" value="0.0" />
       <entry key="M2" value="0.0" />
-      <entry key="M5" value="1.8502898963321588E-173" />
-      <entry key="M10" value="7.44509890597645E-87" />
-      <entry key="M15" value="5.5217763713921985E-58" />
-      <entry key="M30" value="4.2223379534733084E-29" />
-      <entry key="H1" value="1.2310797539669597E-14" />
-      <entry key="H2" value="2.1767031289680472E-7" />
-      <entry key="H4" value="9.307334455026741E-4" />
-      <entry key="D1" value="1.110351949303819" />
-      <entry key="W1" value="4.015286888146395" />
+      <entry key="M5" value="5.379390619123695E-174" />
+      <entry key="M10" value="4.0143674594394286E-87" />
+      <entry key="M15" value="3.65799618873129E-58" />
+      <entry key="M30" value="3.4366492402510554E-29" />
+      <entry key="H1" value="1.110650196381494E-14" />
+      <entry key="H2" value="2.0674963708096608E-7" />
+      <entry key="H4" value="9.070852344404655E-4" />
+      <entry key="D1" value="1.1055993860621491" />
+      <entry key="W1" value="4.012827178565058" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="9.577442602290537E-5" />
-      <entry key="MS500" value="0.15871530306158033" />
-      <entry key="S2" value="0.8292405264123996" />
-      <entry key="S5" value="1.3559769692647738" />
-      <entry key="S10" value="1.6361384638561152" />
-      <entry key="S30" value="1.8677789297936762" />
-      <entry key="S60" value="1.9324052025856655" />
-      <entry key="M2" value="1.9658220701861209" />
-      <entry key="M5" value="1.9862362600305297" />
-      <entry key="M10" value="1.993102597393807" />
-      <entry key="M15" value="1.995398272108617" />
-      <entry key="M30" value="1.9976974043579918" />
-      <entry key="H1" value="1.998848268888543" />
-      <entry key="H2" value="1.9994268074057002" />
-      <entry key="H4" value="2.0118014022724595" />
-      <entry key="D1" value="31.282259280909248" />
-      <entry key="W1" value="150.86207372852635" />
+      <entry key="MS100" value="0.9541492919829436" />
+      <entry key="MS500" value="1.2631588775191254" />
+      <entry key="S2" value="1.7431760233094844" />
+      <entry key="S5" value="2.211340554685986" />
+      <entry key="S10" value="2.7539316635576547" />
+      <entry key="S30" value="3.4625232705468645" />
+      <entry key="S60" value="3.7159999252051046" />
+      <entry key="M2" value="3.94040360283592" />
+      <entry key="M5" value="4.516493121910713" />
+      <entry key="M10" value="5.043967999004417" />
+      <entry key="M15" value="5.301366918590896" />
+      <entry key="M30" value="5.615683472962249" />
+      <entry key="H1" value="5.798163951628594" />
+      <entry key="H2" value="5.896538423248035" />
+      <entry key="H4" value="5.959397018481759" />
+      <entry key="D1" value="35.14814921294171" />
+      <entry key="W1" value="154.76962701346687" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -391,7 +384,8 @@
     <MESSAGE value="Created the entities" />
     <MESSAGE value="Connected to the database" />
     <MESSAGE value="add car and run" />
-    <option name="LAST_COMMIT_MESSAGE" value="add car and run" />
+    <MESSAGE value="created the EJB" />
+    <option name="LAST_COMMIT_MESSAGE" value="created the EJB" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
