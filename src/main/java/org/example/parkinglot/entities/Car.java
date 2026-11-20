@@ -4,14 +4,20 @@ import jakarta.persistence.*;
 
 
 @Entity
-@Table(name = "car")
+@Table(name = "cars")
 public class Car {
+
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
     private Long id;
+
+    @Column(name = "LICENSEPLATE")
     private String licensePlate;
+
+    @Column(name = "PARKINGSPOT")
     private String parkingSpot;
+
 
     @ManyToOne(optional = false)
     @JoinColumn(name = "owner_id", nullable = false)

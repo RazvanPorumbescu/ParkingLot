@@ -36,7 +36,7 @@
 
                     <!-- Link -->
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link ${pageContext.request.requestURI.substring(pageContext.request.requestURI.lastIndexOf("/")) eq '/users.jsp' ? ' active' : ''}" href="${pageContext.request.contextPath}/Users">Users</a>
                     </li>
 
                     <!-- Disabled -->

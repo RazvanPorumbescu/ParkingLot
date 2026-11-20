@@ -4,10 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0069de7-3b35-4c98-bc71-a4b70c87b278" name="Changes" comment="Connected to the database">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/parkinglot/common/CarDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/parkinglot/ejb/CarsBean.java" afterDir="false" />
+    <list default="true" id="c0069de7-3b35-4c98-bc71-a4b70c87b278" name="Changes" comment="add car and run">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/parkinglot/common/UserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/parkinglot/ejb/UserBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/parkinglot/ejb/UsersBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/parkinglot/servlets/Users.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/users.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/parkinglot/common/CarDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/parkinglot/common/CarDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/parkinglot/ejb/CarsBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/parkinglot/ejb/CarsBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/parkinglot/entities/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/parkinglot/entities/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/Cars.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/parkinglot/servlets/Cars.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/cars.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/cars.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/menu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/menu.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,12 +37,25 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="ParkingLot" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ParkingLot" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ParkingLot" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
               </path>
             </expand>
             <select />
@@ -42,9 +67,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Class" />
         <option value="Servlet" />
         <option value="Jsp File" />
-        <option value="Class" />
       </list>
     </option>
   </component>
@@ -76,61 +101,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000042917575254" />
-      <entry key="MS500" value="1.0852045704437319" />
-      <entry key="S2" value="1.85464403556468" />
-      <entry key="S5" value="3.280517577405507" />
-      <entry key="S10" value="4.733725276986649" />
-      <entry key="S30" value="6.664366682754049" />
-      <entry key="S60" value="8.217979948313314" />
-      <entry key="M2" value="11.49633514049027" />
-      <entry key="M5" value="17.706387483157805" />
-      <entry key="M10" value="22.3846134004203" />
-      <entry key="M15" value="24.885488722053672" />
-      <entry key="M30" value="29.115707908500198" />
-      <entry key="H1" value="33.20472977050922" />
-      <entry key="H2" value="36.433025963085136" />
-      <entry key="H4" value="39.85952715290445" />
-      <entry key="D1" value="107.33688895817161" />
-      <entry key="W1" value="171.49154025184157" />
+      <entry key="MS100" value="1.0000000000000184" />
+      <entry key="MS500" value="1.0017922653951394" />
+      <entry key="S2" value="1.205755086319677" />
+      <entry key="S5" value="1.531300508976264" />
+      <entry key="S10" value="1.7289036349040001" />
+      <entry key="S30" value="1.8999603418343964" />
+      <entry key="S60" value="1.9486623961317306" />
+      <entry key="M2" value="1.9739930164696924" />
+      <entry key="M5" value="1.9895148978399062" />
+      <entry key="M10" value="1.9947436342293958" />
+      <entry key="M15" value="1.9964926790277695" />
+      <entry key="M30" value="1.9982447991488708" />
+      <entry key="H1" value="1.9991220141450006" />
+      <entry key="H2" value="1.9995634747024433" />
+      <entry key="H4" value="2.010939878307091" />
+      <entry key="D1" value="30.172122157973135" />
+      <entry key="W1" value="146.8469180903922" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="2.0656470641307738E-103" />
-      <entry key="S2" value="2.146736500255967E-26" />
-      <entry key="S5" value="6.128055705160245E-11" />
-      <entry key="S10" value="1.0066073850052411E-5" />
-      <entry key="S30" value="0.03525849333176079" />
-      <entry key="S60" value="0.3007545682855931" />
-      <entry key="M2" value="0.9249506958633857" />
-      <entry key="M5" value="1.860126721890896" />
-      <entry key="M10" value="2.3605969887815945" />
-      <entry key="M15" value="2.567515448916091" />
-      <entry key="M30" value="2.879188617832298" />
-      <entry key="H1" value="3.2147318419424136" />
-      <entry key="H2" value="3.517454456704" />
-      <entry key="H4" value="3.7414501319942692" />
-      <entry key="D1" value="4.427546178099755" />
-      <entry key="W1" value="4.892504287534411" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="1.8502898963321588E-173" />
+      <entry key="M10" value="7.44509890597645E-87" />
+      <entry key="M15" value="5.5217763713921985E-58" />
+      <entry key="M30" value="4.2223379534733084E-29" />
+      <entry key="H1" value="1.2310797539669597E-14" />
+      <entry key="H2" value="2.1767031289680472E-7" />
+      <entry key="H4" value="9.307334455026741E-4" />
+      <entry key="D1" value="1.110351949303819" />
+      <entry key="W1" value="4.015286888146395" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.21315872300793182" />
-      <entry key="MS500" value="0.7439624906459263" />
-      <entry key="S2" value="1.5102897801067363" />
-      <entry key="S5" value="2.973911182075856" />
-      <entry key="S10" value="4.492072662549189" />
-      <entry key="S30" value="6.569075398699961" />
-      <entry key="S60" value="8.399557832003527" />
-      <entry key="M2" value="12.30192211106452" />
-      <entry key="M5" value="19.481752934923588" />
-      <entry key="M10" value="24.6916641029936" />
-      <entry key="M15" value="27.414035129309045" />
-      <entry key="M30" value="31.97343867790359" />
-      <entry key="H1" value="36.408128425871" />
-      <entry key="H2" value="39.94463629673086" />
-      <entry key="H4" value="43.59797305747138" />
-      <entry key="D1" value="111.76363528998691" />
-      <entry key="W1" value="176.3838882135458" />
+      <entry key="MS100" value="9.577442602290537E-5" />
+      <entry key="MS500" value="0.15871530306158033" />
+      <entry key="S2" value="0.8292405264123996" />
+      <entry key="S5" value="1.3559769692647738" />
+      <entry key="S10" value="1.6361384638561152" />
+      <entry key="S30" value="1.8677789297936762" />
+      <entry key="S60" value="1.9324052025856655" />
+      <entry key="M2" value="1.9658220701861209" />
+      <entry key="M5" value="1.9862362600305297" />
+      <entry key="M10" value="1.993102597393807" />
+      <entry key="M15" value="1.995398272108617" />
+      <entry key="M30" value="1.9976974043579918" />
+      <entry key="H1" value="1.998848268888543" />
+      <entry key="H2" value="1.9994268074057002" />
+      <entry key="H4" value="2.0118014022724595" />
+      <entry key="D1" value="31.282259280909248" />
+      <entry key="W1" value="150.86207372852635" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -168,78 +193,22 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="Unknown.GlassFish 8.0.5931337852">
-    <configuration name="GlassFish 8.0.51" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 8.0.51" ALTERNATIVE_JRE_ENABLED="false">
-      <deployment>
-        <artifact name="Gradle : com.parking : ParkingLot-1.0-SNAPSHOT.war">
-          <settings />
-        </artifact>
-      </deployment>
-      <server-settings>
-        <option name="DOMAIN" value="domain1" />
-        <option name="PRESERVE" value="false" />
-        <option name="COMPATIBILITY" value="false" />
-        <option name="VIRTUAL_SERVER" />
-        <option name="USERNAME" value="admin" />
-        <option name="CREDENTIAL_ALIAS" />
-      </server-settings>
-      <predefined_log_file enabled="true" id="GlassFish" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="9009" />
-      </RunnerSettings>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method v="2">
-        <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="Gradle : com.parking : ParkingLot-1.0-SNAPSHOT.war" />
-        </option>
-      </method>
-    </configuration>
+  <component name="RunDashboard">
+    <option name="configurationStatuses">
+      <map>
+        <entry key="GlassfishConfiguration">
+          <value>
+            <map>
+              <entry key="GlassFish 8.0.5" value="STOPPED" />
+            </map>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="RunManager" selected="GlassFish Server.GlassFish 8.0.5">
     <configuration name="GlassFish 8.0.5" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 8.0.5" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="openjdk-25">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/ParkingLot-1.0-SNAPSHOT" />
       <option name="UPDATING_POLICY" value="hot-swap-classes" />
       <deployment>
         <artifact name="Gradle : com.parking : ParkingLot-1.0-SNAPSHOT.war">
@@ -310,6 +279,80 @@
         </option>
       </method>
     </configuration>
+    <configuration name="GlassFish 8.0.51" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 8.0.51" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment>
+        <artifact name="Gradle : com.parking : ParkingLot-1.0-SNAPSHOT.war">
+          <settings />
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="DOMAIN" value="domain1" />
+        <option name="PRESERVE" value="false" />
+        <option name="COMPATIBILITY" value="false" />
+        <option name="VIRTUAL_SERVER" />
+        <option name="USERNAME" value="admin" />
+        <option name="CREDENTIAL_ALIAS" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="GlassFish" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="9009" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Gradle : com.parking : ParkingLot-1.0-SNAPSHOT.war" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="GlassFish Server.GlassFish 8.0.5" />
+      <item itemvalue="GlassFish Server.GlassFish 8.0.51" />
+    </list>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -347,7 +390,8 @@
     <MESSAGE value="added a page template tag and created an about" />
     <MESSAGE value="Created the entities" />
     <MESSAGE value="Connected to the database" />
-    <option name="LAST_COMMIT_MESSAGE" value="Connected to the database" />
+    <MESSAGE value="add car and run" />
+    <option name="LAST_COMMIT_MESSAGE" value="add car and run" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
